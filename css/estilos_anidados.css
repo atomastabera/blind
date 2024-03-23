@@ -63,10 +63,18 @@ body{
             object-fit: cover;
         }
         .sizeImgLateral{
-            height: 60vh;
+            max-width: auto;
+            height: 60vh;}
         }
-        .sizeImgCentral{
-            height: 70vh;
+        .sizeImgCentral {
+                height: 80vh;
+        }
+        @media (max-width: 767px) {
+            .sizeImgLateral,
+            .sizeImgCentral {
+                display: block;
+                margin: 0;
+            }
         }
         .sizeImgShop{
             height: 300px;
@@ -78,11 +86,11 @@ body{
             height: 60vh;
             object-fit: cover;
         }
-        .carousel-item{
-            .sizeImgCentral{
-                height: 60vh;
-            }
+        .carousel-item img{
+            height: 60vh
         }
+        
+        
         .tarjetaPrendas.card{
             width: 250px;
             height: 400px;
@@ -92,7 +100,7 @@ body{
             float: inline-end;
             
         }
-    }
+    
     
     
 
