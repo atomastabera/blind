@@ -44,7 +44,7 @@ body{
             .navbar{
                 width: 100%;
                 .navbar-nav{
-                    align-items: flex-end;
+                    align-items: flex-start;
                 }
                 .nav-item{
                     .nav-link{
@@ -59,9 +59,8 @@ body{
     }
 
     main{
-        .imgNoveades{
-            object-fit: cover;
-        }
+        
+        
         .sizeImgLateral{
             max-width: auto;
             height: 60vh;}
