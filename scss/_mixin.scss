@@ -1,0 +1,6 @@
+@mixin cambio-background($background-tercerary){
+    background-color: $background-tercerary;
+}
+@mixin cambio-background($background-quaternary){
+    background-color: $background-quaternary;
+}

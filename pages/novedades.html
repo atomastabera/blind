@@ -8,231 +8,201 @@
         <script src="https://kit.fontawesome.com/0e5b72817b.js" crossorigin="anonymous"></script>
         <script src="../js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/estilos_anidados.css"></link>
+        <link rel="stylesheet" href="../css/estilos.css"></link>
     </head>
     
     <body>
         <header class="d-flex flex-column">
-            <div class="logo-container text-center">
+            <div class="d-flex justify-content-between align-items-center ps-2">
                 <a href="../index.html">
                     <img class="logo" src="../assets/img/logo.png" alt="logo de la tienda de ropa">
                 </a>
-            </div>
-            <nav class="navbar navbar-expand-lg navbar-light d-md-none">
-                <div class="container-fluid bg-light">
-                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="d-flex align-items-center">
-                        <a href="#" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#carritoModal">
-                            <i class="fas fa-shopping-cart"></i>
-                        </a>
-                        <div class="modal fade" id="carritoModal" tabindex="-1" aria-labelledby="carritoModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="carritoModalLabel">Carrito de compras</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Contenido del carrito de compras...</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                        <button type="button" class="btn btn-dark text-white">Realizar compra</button>
-                                    </div>
+                <div>
+                    <a href="#" class="backgroundButton btn btn-sm" data-bs-toggle="modal" data-bs-target="#carritoModal">
+                        <i class="colorContent fas fa-shopping-cart"></i>
+                    </a>
+                    <div class="modal fade" id="carritoModal" tabindex="-1" aria-labelledby="carritoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="carritoModalLabel">Carrito de compras</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-warning btn-sm mx-2 fw-bold">Ingresar</a>
-                    </div>
-                </div>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../index.html">Home</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/novedades.html">Novedades</a></li>
-                        <li class="nav-item active navbar-brand"><a class="nav-link" href="../pages/shop.html">Shop</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/nosotros.html">Nosotros</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <nav class="navbar navbar-expand-lg navbar-light d-none d-md-block">
-                <div class="container-fluid bg-light">
-                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../index.html">Home</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/novedades.html">Novedades</a></li>
-                        <li class="nav-item active navbar-brand"><a class="nav-link" href="../pages/shop.html">Shop</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/nosotros.html">Nosotros</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
-                    </ul>
-                    <div class="d-flex align-items-center ms-auto me-2">
-                        <a href="#" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#carritoModal">
-                            <i class="fas fa-shopping-cart"></i>
-                        </a>
-                        <div class="modal fade" id="carritoModal" tabindex="-1" aria-labelledby="carritoModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="carritoModalLabel">Carrito de compras</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Contenido del carrito de compras...</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                        <button type="button" class="btn btn-dark text-white">Realizar compra</button>
-                                    </div>
+                                <div class="modal-body">
+                                    <p>Contenido del carrito de compras...</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-dark text-white">Realizar compra</button>
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="btn btn-warning btn-sm mx-2 fw-bold">Ingresar</a>
                     </div>
+                    <button href="#" class="backgroundButton btn btn-sm mx-2 fw-bold">
+                        <div class="colorContent">Ingresar</div>
+                    </button>
+                </div>
+            </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light d-lg-none">
+                <div class="container-fluid d-flex justify-content-between">
+                    <div class="menu fw-bold p-2">MENU</div>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="container-fluid justify-content-end text-end">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="../index.html">INICIO</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/novedades.html">NOVEDADES</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/tienda.html">TIENDA</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/contacto.html">CONTACTO</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block">
+                <div class="container-fluid">
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse text-center justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item navbar-brand"><a class="nav-link" href="../index.html">INICIO</a></li>
+                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/novedades.html">NOVEDADES</a></li>
+                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/tienda.html">TIENDA</a></li>
+                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a></li>
+                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/contacto.html">CONTACTO</a></li>
+                    </ul>
                 </div>
             </nav>
         </header>
 
-        <main class="bg-dark container-fluid p-0 text-center">
-            <div class="container-fluid text-center text-white rounded-pill backgroundIndex">
-                <h1 class="d-md-none">NOVEDADES</h1>
+        <main class="container-fluid p-0 text-center">
+            <div class="text-center backgroundIndex">
+                <div class="align-items-center">
+                    <div class="col text-center">
+                        <h1>NOVEDADES</h1>
+                    </div>
+                </div>
             </div>
+            <!-- Version Mobile. -->
             <div class="row gap-2 d-flex justify-content-center m-0">
                 <div class="col-md-2"> 
                     <div class="col-md-8 d-flex justify-content-center">
                         <div id="carouselNovedades" class="carousel d-md-none slide pointer-event" data-bs-ride="carousel">
-                            <div class="carouselNovedades carousel-inner bg-dark">
-                                <div class="carousel-item active">
-                                    <section>
-                                        <img class="sizeImgLateral d-block img-thumbnail mx-auto" src="../assets/img/musculosa_udnergrey1.jpg" alt=""> 
-                                    </section>
+                            <div class="carouselNovedades carousel-inner">
+                                <div class="w-100 h-100 imgNovedades carousel-item active">
+                                    <img class="sizeImgLateral" src="../assets/img/musculosa_udnergrey1.jpg" alt=""> 
                                 </div>
-                                <div class="carousel-item">
-                                    <section>
-                                        <img class="sizeImgCentral d-block img-thumbnail mx-auto" src="../assets/img/musculosa_udnergrey.jpg" alt=""> 
-                                    </section>
+                                <div class="w-100 h-100 imgNovedades carousel-item">
+                                    <img class="sizeImgCentral" src="../assets/img/musculosa_udnergrey.jpg" alt=""> 
                                 </div>
-                                <div class="carousel-item">
-                                    <section>
-                                        <img class="sizeImgLateral img-thumbnail mx-auto" src="../assets/img/musculosa_udnergrey2.jpg" alt=""> 
-                                    </section>
+                                <div class="w-100 h-100 imgNovedades carousel-item">
+                                    <img class="sizeImgLateral" src="../assets/img/musculosa_udnergrey2.jpg" alt=""> 
                                 </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselNovedades" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Anterior</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselNovedades" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Siguiente</span>
-                                    </button>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselNovedades" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselNovedades" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
                             </div>
-                            
                         </div>
-                        
                     </div>
-                    
                 </div>
-                <section class="justify-content-center bg-dark p-4 d-md-none">
-                    <h2 class="text-white d-inline-block">Musculosa Under Grey</h2>
+                
+                <div class="justify-content-center backgroundText p-4 d-md-none">
+                    <h3 class="d-inline-block">Musculosa Under Grey</h3>
                     <br>
-                    <p class="text-white d-inline-block">
+                    <p class="parrafoNovedades d-inline-block">
                         Confeccionado con un tejido elástico de alta calidad se adapta a cualquier ocasión y estilo.<br>
-                        Disponible ahora en nuestra tienda online
+                        Disponible ahora en nuestra tienda online.
                     </p>
-                </section>
-            </div>
-
-            <div class="d-none d-md-block">
-                <div class="container-fluid text-center text-white rounded-pill backgroundIndex">
-                    <h1 class="titulosPages">NOVEDADES</h1>
                 </div>
+            </div>
+            <!-- Version escritorio. -->
+            <div class="d-none d-md-block m-0">
                 <div class="container-fluid d-flex align-items-center justify-content-evenly">
-                    <img class="sizeImgLateral img-thumbnail" src="../assets/img/musculosa_udnergrey1.jpg" alt="">
-                    <img class="sizeImgCentral img-thumbnail" src="../assets/img/musculosa_udnergrey.jpg" alt="">
-                    <img class="sizeImgLateral img-thumbnail" src="../assets/img/musculosa_udnergrey2.jpg" alt="">
+                    <img class="sizeImgLateralDesk" src="../assets/img/musculosa_udnergrey1.jpg" alt="">
+                    <img class="sizeImgCentralDesk" src="../assets/img/musculosa_udnergrey.jpg" alt="">
+                    <img class="sizeImgLateralDesk" src="../assets/img/musculosa_udnergrey2.jpg" alt="">
                 </div>
-                <div class="justify-content-center bg-dark p-4">
-                    <h2 class="text-white d-inline-block">Musculosa Under Grey</h2>
+                <div class="backgroundText justify-content-center p-4">
+                    <h3 class="d-inline-block">Musculosa Under Grey</h3>
                     <br>
-                    <p class="text-white d-inline-block">
+                    <p class="parrafoNovedades d-inline-block">
                         Confeccionado con un tejido elástico de alta calidad se adapta a cualquier ocasión y estilo.<br>
                         Disponible ahora en nuestra tienda online
                     </p>
                 </div>
             </div>
-        
-            
         </main>
         
         <footer class="text-center">
             <div class="container">
                 <div class="pt-4 pb-4">
-                    <a href="#"><img class="logo" src="../assets/img/logo.png" alt="Logoblind" loading="lazy"></a>
+                    <a href="./index.html">
+                        <img class="logo" src="../assets/img/logo.png" alt="logo de la tienda de ropa">
+                    </a>
                 </div>
-                <div class="row">
+                <div class="row footerinfo">
                     <div class="col-lg-3 col-md-6 mb-4">
-                        <section>
-                            <h4 class="fs-3">SUSCRIBITE</h4>
-                            <form action="#" class="row g-2">
-                                <div class="col">
-                                    <input type="email" id="email" name="email" class="form-control" placeholder="Ingrese su correo electrónico" required>
-                                </div>
-                                <div class="col">
-                                    <button type="submit" class="btn btn-warning w-100" onclick="alert('¡Gracias, has comenzado a donar 1 dolar mensual!')">Suscribirme</button>
-                                </div>
-                            </form>
-                        </section>  
+                        <h4 class="fs-3">SUSCRIBITE</h4>
+                        <form action="#" class="row g-2">
+                            <div class="col">
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Ingrese su correo electrónico" required>
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn backgroundButton w-100 fw-bold" onclick="alert('¡Gracias, has comenzado a donar 1 dolar mensual!')">
+                                    <div class="colorContent">Suscribirme</div>
+                                </button>
+                            </div>
+                        </form> 
                         <input type="checkbox" id="newsletter" name="newsletter" checked>
                         <label for="newsletter">Quiero recibir novedades</label>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-4">
-                        <section>
-                            <h4 class="fs-3">INSTITUCIONAL</h4>
-                            <nav class="navbar-light">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item"><a class="nav-link" href="./nosotros.html">Quienes somos</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="./404.html">Como comprar</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="./404.html">Envios</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="./shop.html">Shop</a></li>
-                                </ul>
-                            </nav>
-                        </section>
+                        <h4 class="fs-3">INSTITUCIONAL</h4>
+                        <nav class="navbar-light">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link" href="./nosotros.html">Quienes somos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./404.html">Como comprar</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./404.html">Envios</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./shop.html">Shop</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                    <div class="col-lg-3 col-md-12 mb-4">
-                        <section>
-                            <h4 class="fs-3">CLIENTES</h4>
-                            <nav class="navbar-light">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item"><a class="nav-link" href="./404.html">Mi Cuenta</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="./404.html">Mis Favoritos</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="./404.html">Mis Compras</a></li>
-                                </ul>
-                            </nav>
-                        </section>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="fs-3">CLIENTES</h4>
+                        <nav class="navbar-light">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link" href="./404.html">Mi Cuenta</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./404.html">Mis Favoritos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./404.html">Mis Compras</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                    <div class="col-lg-3 col-md-12 mb-4">
-                        <section>
-                            <h4 class="fs-3">LEGAL</h4>
-                            <nav class="navbar-light">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item"> <a class="nav-link" href="./404.html">Terminos y Condiciones</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="./404.html">Privacidad de datos</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="./404.html">Arrepentimiento de compra</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="./404.html">Promociones Vigentes</a></li>
-                                </ul>
-                            </nav>
-                        </section>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="fs-3">LEGAL</h4>
+                        <nav class="navbar-light">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"> <a class="nav-link" href="./404.html">Terminos y Condiciones</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./404.html">Privacidad de datos</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./404.html">Arrepentimiento de compra</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./404.html">Promociones Vigentes</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-2 col-md-2">
                         <section>
                             <h5>ENCONTRANOS</h5>
                             <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fs-1 m-1" aria-hidden="true" style="color: #000000;"></i></a>
@@ -240,10 +210,8 @@
                             <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f fs-1 m-1" aria-hidden="true" style="color: #000000;"></i></a>
                         </section>
                     </div>
-                    <div class="col-lg-4 text-md-end">
-                        <section>
+                    <div class="col-lg-10 text-md-end">
                             <p>© 2024 [BLIND]. Todos los derechos reservados.</p>
-                        </section>
                     </div>
                 </div>
             </div>
