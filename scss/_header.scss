@@ -1,0 +1,39 @@
+header{
+    .logo{
+        width: 120px; 
+    }
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    .navbar{
+        width: 100%;
+        background-color: $background-secundary;
+        color:$color-primario;
+        .navbar-nav{
+        .nav-item{
+            .nav-link{
+                font-family: $fuente-poppins;
+                font-weight: bold;
+                color:$color-primario;
+                font-size: $fuente-chica;
+                }
+            }   
+        }
+    }
+    .menu{
+        font-family: $fuente-poppins;
+        font-size: $fuente-chica;
+
+    }
+    }
+    .backgroundButton{
+        font-family: $fuente-cabin;
+        background-color: $button-color;
+        &:hover{
+            background-color: $color-hover;
+
+        }
+        .colorContent{
+            color:$color-primario;
+        }
+    }
