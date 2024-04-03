@@ -8,92 +8,73 @@
         <script src="https://kit.fontawesome.com/0e5b72817b.js" crossorigin="anonymous"></script>
         <script src="./js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="./css/bootstrap.min.css">
-        <link rel="stylesheet" href="./css/estilos_anidados.css"></link>
+        <link rel="stylesheet" href="./css/estilos.css"></link>
     </head>
     <body>
         <header class="d-flex flex-column">
-            <div class="text-center">
-                <a href="../index.html">
+            <div class="d-flex justify-content-between align-items-center ps-2">
+                <a href="./index.html">
                     <img class="logo" src="./assets/img/logo.png" alt="logo de la tienda de ropa">
                 </a>
+                <div>
+                    <a href="#" class="backgroundButton btn btn-sm" data-bs-toggle="modal" data-bs-target="#carritoModal">
+                        <i class="colorContent fas fa-shopping-cart"></i>
+                    </a>
+                    <div class="modal fade" id="carritoModal" tabindex="-1" aria-labelledby="carritoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="carritoModalLabel">Carrito de compras</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Contenido del carrito de compras...</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-dark text-white">Realizar compra</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button href="#" class="backgroundButton btn btn-sm mx-2 fw-bold">
+                        <div class="colorContent">Ingresar</div>
+                    </button>
+                </div>
             </div>
             <nav class="navbar navbar-expand-lg navbar-light d-lg-none">
-                <div class="container-fluid bg-light">
+                <div class="container-fluid d-flex justify-content-between">
+                    <div class="menu fw-bold p-2">MENU</div>
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="d-flex align-items-center">
-                        <a href="#" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#carritoModal">
-                            <i class="fas fa-shopping-cart"></i>
-                        </a>
-                        <div class="modal fade" id="carritoModal" tabindex="-1" aria-labelledby="carritoModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="carritoModalLabel">Carrito de compras</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Contenido del carrito de compras...</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                        <button type="button" class="btn btn-dark text-white">Realizar compra</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-warning btn-sm mx-2 fw-bold">Ingresar</a>
-                    </div>
                 </div>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="./index.html">Home</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/novedades.html">Novedades</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/shop.html">Shop</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/nosotros.html">Nosotros</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
-                    </ul>
+                <div class="container-fluid justify-content-end text-end">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="./index.html">INICIO</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/novedades.html">NOVEDADES</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/tienda.html">TIENDA</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/contacto.html">CONTACTO</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
-            
             <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block">
-                <div class="container-fluid bg-light">
+                <div class="container-fluid">
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse text-center justify-content-center" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="./index.html">Home</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/novedades.html">Novedades</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/shop.html">Shop</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/nosotros.html">Nosotros</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                        <li class="nav-item navbar-brand"><a class="nav-link" href="./index.html">INICIO</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/novedades.html">NOVEDADES</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/tienda.html">TIENDA</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/contacto.html">CONTACTO</a></li>
                     </ul>
-                    <div class="d-flex align-items-center ms-auto">
-                        <a href="#" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#carritoModal">
-                            <i class="fas fa-shopping-cart"></i>
-                        </a>
-                        <div class="modal fade" id="carritoModal" tabindex="-1" aria-labelledby="carritoModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="carritoModalLabel">Carrito de compras</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Contenido del carrito de compras...</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                        <button type="button" class="btn btn-dark text-white">Realizar compra</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-warning btn-sm mx-2 fw-bold">Ingresar</a>
-                    </div>
                 </div>
             </nav>
         </header>
@@ -104,44 +85,44 @@
                 <p>PICK UP EN TODO EL PAIS</p>
                 <p>COMPRA AHORA Y DESPACHAMOS TU PEDIDO EN 48HS</p>
             </section>
-            <section class="tituloPrendas d-flex justify-content-center">
-                <img class="portadas" src="./assets/img/portada_destacados.png">
+            <section class="d-flex justify-content-center">
+                <h2>DESTACADOS</h2>
             </section>    
             <section class="row p-2">
                 <div class="container d-none d-md-block">
                     <div class="row justify-content-center">
                         <div class="d-flex col-2">
                             <section class="d-flex d-block">
-                            <img src="./assets/img/remera_blackbeach.jpg" class="img-thumbnail imgaside" alt="remera">
+                            <img src="./assets/img/remera_blackbeach.jpg" class="imgaside" alt="remera">
                             </section>
                         </div>
                         <div class="d-flex col-2">
                             <section class="d-flex d-block">
-                                <img src="./assets/img/remera_retrowave.jpg" class="img-thumbnail imgaside" alt="remera">
-                            </section>
-                        </div>
-
-                        <div class="d-flex col-2">
-                            <section class="d-flex d-block">
-                                <img src="./assets/img/remera_blanca_fuckofcupid.jpg" class=" img-thumbnail imgaside" alt="remera">
+                                <img src="./assets/img/remera_retrowave.jpg" class="imgaside" alt="remera">
                             </section>
                         </div>
 
                         <div class="d-flex col-2">
                             <section class="d-flex d-block">
-                                <img src="./assets/img/remera_convergebeige.jpg" class=" img-thumbnail imgaside" alt="remera">
+                                <img src="./assets/img/remera_blanca_fuckofcupid.jpg" class="imgaside" alt="remera">
+                            </section>
+                        </div>
+
+                        <div class="d-flex col-2">
+                            <section class="d-flex d-block">
+                                <img src="./assets/img/remera_convergebeige.jpg" class="imgaside" alt="remera">
                             </section>
                         </div>
                         
                         <div class="d-flex col-2">
                             <section class="d-flex d-block">
-                                <img src="./assets/img/short_underbeige.jpg" class=" img-thumbnail imgaside" alt="remera">
+                                <img src="./assets/img/short_underbeige.jpg" class="imgaside" alt="remera">
                             </section>
                         </div>
 
                         <div class="d-flex col-2">
                             <section class="d-flex d-block">
-                                <img src="./assets/img/bermuda_underblack.jpg" class=" img-thumbnail imgaside" alt="remera">
+                                <img src="./assets/img/bermuda_underblack.jpg" class="imgaside" alt="remera">
                             </section>
                         </div>
                     </div>
@@ -198,43 +179,43 @@
                 </div>       
             </section>
             
-            <section class="tituloPrendas d-flex justify-content-center">
-                <img class="portadas" src="./assets/img/portada_ofertas.png">
+            <section class="tituloPrendas d-flex justify-content-evenly">
+                <h2>OFERTAS</h2>
             </section>    
-            <section class="row p-2">
+            <section class="row m-0 p-2">
                 <div class="container-fluid d-none d-md-block">
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-between">
                         <div class="d-flex col-2">
                             <section class="d-flex d-block">
-                            <img src="./assets/img/campera_underblack.jpg" class=" img-thumbnail imgaside" alt="campera">
+                            <img src="./assets/img/campera_underblack.jpg" class="imgaside" alt="campera">
                             </section>
                         </div>
                         <div class="d-flex col-2">
                             <section class="d-flex d-block">
-                                <img src="./assets/img/campera_underbrown.jpg" class=" img-thumbnail imgaside" alt="campera">
+                                <img src="./assets/img/campera_underbrown.jpg" class="imgaside" alt="campera">
                             </section>
                         </div>
                         <div class="d-flex col-2">
                             <section class="d-flex d-block">
-                                <img src="./assets/img/pantaloncargo_wnderblack.jpg" class=" img-thumbnail imgaside" alt="pantalon">
+                                <img src="./assets/img/pantaloncargo_wnderblack.jpg" class="imgaside" alt="pantalon">
                             </section>
                         </div>
 
                         <div class="d-flex col-2">
                             <section class="d-flex d-block">
-                                <img src="./assets/img/pantaloncargo_wndergreen.jpg" class="img-thumbnail imgaside" alt="pantalon">
+                                <img src="./assets/img/pantaloncargo_wndergreen.jpg" class="imgaside" alt="pantalon">
                             </section>
                         </div>
                         
                         <div class="d-flex col-2">
                             <section class="d-flex d-block">
-                                <img src="./assets/img/camisa_underbeige.jpg" class=" img-thumbnail imgaside" alt="camisa">
+                                <img src="./assets/img/camisa_underbeige.jpg" class="imgaside" alt="camisa">
                             </section>
                         </div>
 
                         <div class="d-flex col-2">
                             <section class="d-flex d-block">
-                                <img src="./assets/img/camisa_underbrown.jpg" class=" img-thumbnail imgaside" alt="camisa">
+                                <img src="./assets/img/camisa_underbrown.jpg" class="imgaside" alt="camisa">
                             </section>
                         </div>
                     </div>
@@ -292,67 +273,62 @@
         <footer class="text-center">
             <div class="container">
                 <div class="pt-4 pb-4">
-                    <a href="#"><img class="logo" src="./assets/img/logo.png" alt="Logoblind" loading="lazy"></a>
+                    <a href="./index.html">
+                        <img class="logo" src="./assets/img/logo.png" alt="logo de la tienda de ropa">
+                    </a>
                 </div>
-                <div class="row">
+                <div class="row footerinfo">
                     <div class="col-lg-3 col-md-6 mb-4">
-                        <section>
-                            <h4 class="fs-3">SUSCRIBITE</h4>
-                            <form action="#" class="row g-2">
-                                <div class="col">
-                                    <input type="email" id="email" name="email" class="form-control" placeholder="Ingrese su correo electrónico" required>
-                                </div>
-                                <div class="col">
-                                    <button type="submit" class="btn btn-warning w-100" onclick="alert('¡Gracias, has comenzado a donar 1 dolar mensual!')">Suscribirme</button>
-                                </div>
-                            </form>
-                        </section>  
+                        <h4 class="fs-3">SUSCRIBITE</h4>
+                        <form action="#" class="row g-2">
+                            <div class="col">
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Ingrese su correo electrónico" required>
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn backgroundButton w-100 fw-bold" onclick="alert('¡Gracias, has comenzado a donar 1 dolar mensual!')">
+                                    <div class="colorContent">Suscribirme</div>
+                                </button>
+                            </div>
+                        </form> 
                         <input type="checkbox" id="newsletter" name="newsletter" checked>
                         <label for="newsletter">Quiero recibir novedades</label>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-4">
-                        <section>
-                            <h4 class="fs-3">INSTITUCIONAL</h4>
-                            <nav class="navbar-light">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item"><a class="nav-link" href="./nosotros.html">Quienes somos</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="./404.html">Como comprar</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="./404.html">Envios</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="./shop.html">Shop</a></li>
-                                </ul>
-                            </nav>
-                        </section>
+                        <h4 class="fs-3">INSTITUCIONAL</h4>
+                        <nav class="navbar-light">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link" href="./nosotros.html">Quienes somos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./404.html">Como comprar</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./404.html">Envios</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./shop.html">Shop</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                    <div class="col-lg-3 col-md-12 mb-4">
-                        <section>
-                            <h4 class="fs-3">CLIENTES</h4>
-                            <nav class="navbar-light">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item"><a class="nav-link" href="./404.html">Mi Cuenta</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="./404.html">Mis Favoritos</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="./404.html">Mis Compras</a></li>
-                                </ul>
-                            </nav>
-                        </section>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="fs-3">CLIENTES</h4>
+                        <nav class="navbar-light">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link" href="./404.html">Mi Cuenta</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./404.html">Mis Favoritos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./404.html">Mis Compras</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                    <div class="col-lg-3 col-md-12 mb-4">
-                        <section>
-                            <h4 class="fs-3">LEGAL</h4>
-                            <nav class="navbar-light">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item"> <a class="nav-link" href="./404.html">Terminos y Condiciones</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="./404.html">Privacidad de datos</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="./404.html">Arrepentimiento de compra</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="./404.html">Promociones Vigentes</a></li>
-                                </ul>
-                            </nav>
-                        </section>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="fs-3">LEGAL</h4>
+                        <nav class="navbar-light">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"> <a class="nav-link" href="./404.html">Terminos y Condiciones</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./404.html">Privacidad de datos</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./404.html">Arrepentimiento de compra</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./404.html">Promociones Vigentes</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-2 col-md-2">
                         <section>
                             <h5>ENCONTRANOS</h5>
                             <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fs-1 m-1" aria-hidden="true" style="color: #000000;"></i></a>
@@ -360,10 +336,8 @@
                             <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f fs-1 m-1" aria-hidden="true" style="color: #000000;"></i></a>
                         </section>
                     </div>
-                    <div class="col-lg-4 text-md-end">
-                        <section>
+                    <div class="col-lg-10 text-md-end">
                             <p>© 2024 [BLIND]. Todos los derechos reservados.</p>
-                        </section>
                     </div>
                 </div>
             </div>
