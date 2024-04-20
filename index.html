@@ -3,7 +3,9 @@
     <link>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CoderHouse - Indumentaria</title>
+        <meta name="description" content="¡Descubre tu estilo único en BLIND! Explora nuestra colección de indumentaria unica y encuentra las últimas tendencias en ropa y accesorios para todos. Con una amplia variedad de prendas de alta calidad, BLIND es tu destino para lucir a la moda, vestirte de forma unica y comoda. ¡Visita nuestra tienda hoy y déjate sorprender!">
+        <meta name="keywords" content="Blind, ropa, prendas de vestir, moda, ropa, estilo, tendencias, hombres, mujeres, accesorios, calidad, compras">
+        <title>Home - CoderHouse - Indumentaria</title>
         <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
         <script src="https://kit.fontawesome.com/0e5b72817b.js" crossorigin="anonymous"></script>
         <script src="./js/bootstrap.bundle.min.js"></script>
@@ -12,11 +14,27 @@
     </head>
     <body>
         <header class="d-flex flex-column">
-            <div class="d-flex justify-content-between align-items-center ps-2">
+            <div class="d-flex align-items-center justify-content-between">
                 <a href="./index.html">
                     <img class="logo" src="./assets/img/logo.png" alt="logo de la tienda de ropa">
                 </a>
-                <div>
+                <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse text-center justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="./index.html">INICIO</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/novedades.html">NOVEDADES</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/tienda.html">TIENDA</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/contacto.html">CONTACTO</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="d-flex">
                     <a href="#" class="backgroundButton btn btn-sm" data-bs-toggle="modal" data-bs-target="#carritoModal">
                         <i class="colorContent fas fa-shopping-cart"></i>
                     </a>
@@ -37,14 +55,13 @@
                             </div>
                         </div>
                     </div>
-                    <button href="#" class="backgroundButton btn btn-sm mx-2 fw-bold">
-                        <div class="colorContent">Ingresar</div>
+                    <button href="#" class="backgroundButton btn btn-sm mx-2 fw-bold justify-content-md-end">
+                        <i class="colorContent fa-solid fa-user"></i>
                     </button>
                 </div>
             </div>
             <nav class="navbar navbar-expand-lg navbar-light d-lg-none">
-                <div class="container-fluid d-flex justify-content-between">
-                    <div class="menu fw-bold p-2">MENU</div>
+                <div class="container-fluid d-flex justify-content-end">
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -61,213 +78,311 @@
                     </div>
                 </div>
             </nav>
-            <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block">
-                <div class="container-fluid">
-                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse text-center justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="./index.html">INICIO</a></li>
-                            <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/novedades.html">NOVEDADES</a></li>
-                            <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/tienda.html">TIENDA</a></li>
-                            <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a></li>
-                            <li class="nav-item navbar-brand"><a class="nav-link" href="./pages/contacto.html">CONTACTO</a></li>
-                    </ul>
-                </div>
-            </nav>
         </header>
     
-        <main class="backgroundIndex container-fluid">
-            <section class="principal text-center">
-                <h1 class="tituloPrincipal">A NEW BEGINNING, A UNIQUE IDENTITY</h1>
-                <p>PICK UP EN TODO EL PAIS</p>
-                <p>COMPRA AHORA Y DESPACHAMOS TU PEDIDO EN 48HS</p>
-            </section>
-            <section class="d-flex justify-content-center">
-                <h2>DESTACADOS</h2>
-            </section>    
-            <section class="row p-2">
-                <div class="container d-none d-md-block">
-                    <div class="row justify-content-center">
-                        <div class="d-flex col-2">
-                            <section class="d-flex d-block">
-                            <img src="./assets/img/remera_blackbeach.jpg" class="imgaside" alt="remera">
-                            </section>
-                        </div>
-                        <div class="d-flex col-2">
-                            <section class="d-flex d-block">
-                                <img src="./assets/img/remera_retrowave.jpg" class="imgaside" alt="remera">
-                            </section>
-                        </div>
-
-                        <div class="d-flex col-2">
-                            <section class="d-flex d-block">
-                                <img src="./assets/img/remera_blanca_fuckofcupid.jpg" class="imgaside" alt="remera">
-                            </section>
-                        </div>
-
-                        <div class="d-flex col-2">
-                            <section class="d-flex d-block">
-                                <img src="./assets/img/remera_convergebeige.jpg" class="imgaside" alt="remera">
-                            </section>
-                        </div>
-                        
-                        <div class="d-flex col-2">
-                            <section class="d-flex d-block">
-                                <img src="./assets/img/short_underbeige.jpg" class="imgaside" alt="remera">
-                            </section>
-                        </div>
-
-                        <div class="d-flex col-2">
-                            <section class="d-flex d-block">
-                                <img src="./assets/img/bermuda_underblack.jpg" class="imgaside" alt="remera">
-                            </section>
-                        </div>
-                    </div>
+        <main class="container-fluid p-0">
+            <div class="imgBanner d-flex container-fluid justify-content-center align-items-center m-0 row">
+                <div class="tituloPrincipal text-center col-lg-6">
+                    <h1 class="tituloPrincipal">A NEW BEGINNING, A UNIQUE IDENTITY</h1>
                 </div>
-                  
-                <div class="row">
-                    <div class="col-md-2"> 
-                        <div class="col-md-8 d-flex justify-content-center"> 
-                            <div id="carouselDestacados" class="carousel d-md-none slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <section class>
-                                            <img src="./assets/img/remera_blackbeach.jpg" class="d-block img-fluid h-100 w-100" alt="remera">
-                                        </section>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <section class="">
-                                            <img src="./assets/img/remera_retrowave.jpg" class="d-block img-fluid h-100 w-100" alt="remera">
-                                        </section>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <section class="">
-                                            <img src="./assets/img/remera_blanca_fuckofcupid.jpg" class="d-block img-fluid h-100 w-100" alt="remera">
-                                        </section>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <section class="">
-                                            <img src="./assets/img/remera_convergebeige.jpg" class="d-block img-fluid h-100 w-100" alt="remera">
-                                        </section>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <section class="">
-                                            <img src="./assets/img/short_underbeige.jpg" class="d-block img-fluid h-100 w-100" alt="short">
-                                        </section>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <section class="">
-                                            <img src="./assets/img/bermuda_underblack.jpg" class="d-block img-fluid h-100 w-100" alt="bermuda">
-                                        </section>
-                                    </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestacados" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Anterior</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselDestacados" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Siguiente</span>
-                                    </button>
-                                </div>
-                            </div> 
-                        </div>   
-                    </div>    
-                </div>       
-            </section>
-            
-            <section class="tituloPrendas d-flex justify-content-evenly">
-                <h2>OFERTAS</h2>
-            </section>    
-            <section class="row m-0 p-2">
-                <div class="container-fluid d-none d-md-block">
-                    <div class="row justify-content-between">
-                        <div class="d-flex col-2">
-                            <section class="d-flex d-block">
-                            <img src="./assets/img/campera_underblack.jpg" class="imgaside" alt="campera">
-                            </section>
-                        </div>
-                        <div class="d-flex col-2">
-                            <section class="d-flex d-block">
-                                <img src="./assets/img/campera_underbrown.jpg" class="imgaside" alt="campera">
-                            </section>
-                        </div>
-                        <div class="d-flex col-2">
-                            <section class="d-flex d-block">
-                                <img src="./assets/img/pantaloncargo_wnderblack.jpg" class="imgaside" alt="pantalon">
-                            </section>
-                        </div>
-
-                        <div class="d-flex col-2">
-                            <section class="d-flex d-block">
-                                <img src="./assets/img/pantaloncargo_wndergreen.jpg" class="imgaside" alt="pantalon">
-                            </section>
-                        </div>
-                        
-                        <div class="d-flex col-2">
-                            <section class="d-flex d-block">
-                                <img src="./assets/img/camisa_underbeige.jpg" class="imgaside" alt="camisa">
-                            </section>
-                        </div>
-
-                        <div class="d-flex col-2">
-                            <section class="d-flex d-block">
-                                <img src="./assets/img/camisa_underbrown.jpg" class="imgaside" alt="camisa">
-                            </section>
-                        </div>
-                    </div>
+                <div class="row-2 col text-center justify-content-center align-items-center">
+                    <p>PROXIMAMENTE</p>
+                <div class="d-flex container-fluid justify-content-center align-items-center col-lg-6">
+                    <img class="imgCard" src="./assets/img/remeraspray.jpg">
                 </div>
-                  
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="col-md-8 d-flex justify-content-center"> 
-                        <div id="carouselOfertas" class="carousel d-md-none slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <section class="imgIndex">
-                                        <img src="./assets/img/campera_underblack.jpg" class="d-block img-fluid h-100 w-100" alt="campera">
-                                    </section>
-                                    <section class="imgIndex">
-                                        <img src="./assets/img/campera_underbrown.jpg" class="d-block img-fluid h-100 w-100" alt="campera">
-                                    </section>
+            </div>
+            </div>
+            <div class="backgroundIndex container-fluid w-100 p-0">
+                <div class="container-fluid justify-content-center align-items-center text-center pt-3">
+                    <p>PICK UP EN TODO EL PAIS</p>
+                    <p>COMPRA AHORA Y DESPACHAMOS TU PEDIDO EN 48HS</p>
+                </div>
+                
+                <div class="d-flex justify-content-center">
+                    <h2>DESTACADOS</h2>
+                </div>    
+                <div class="d-flex justify-content-evenly p-4">
+                    <div class="container-fluid d-none d-lg-block">
+                        <div class="row justify-content-center">
+                            <div class="d-flex col-2">
+                                <div class="container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/img/remera_blackbeach.jpg" class="imgside" alt="remera">
+                                    <div class="overlay">
+                                        <div class="content">
+                                            <p>BLACK BEACH</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <section class="imgIndex">
-                                        <img src="./assets/img/pantaloncargo_wnderblack.jpg" class="d-block img-fluid h-100 w-100" alt="pantalon">
-                                    </section>
+                            </div>
+                            <div class="d-flex col-2">
+                                <div class="container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/img/remera_retrowave.jpg" class="imgside" alt="remera">
+                                    <div class="overlay">
+                                        <div class="content">
+                                            <p>RETRO WAVE</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <section class="imgIndex">
-                                        <img src="./assets/img/pantaloncargo_wndergreen.jpg" class="d-block img-fluid h-100 w-100" alt="pantalon">
-                                    </section>
+                            </div>
+
+                            <div class="d-flex col-2">
+                                <div class="container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/img/remera_blanca_fuckofcupid.jpg" class="imgside" alt="remera">
+                                    <div class="overlay">
+                                        <div class="content">
+                                            <p>FUCK OF CUPID</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <section class="imgIndex">
-                                        <img src="./assets/img/camisa_underbeige.jpg" class="d-block img-fluid h-100 w-100" alt="camisa">
-                                    </section>
+                            </div>
+
+                            <div class="d-flex col-2">
+                                <div class="container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/img/remera_convergebeige.jpg" class="imgside" alt="remera">
+                                    <div class="overlay">
+                                        <div class="content">
+                                            <p>COVERBEIGE</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <section class="imgIndex">
-                                        <img src="./assets/img/camisa_underbrown.jpg" class="d-block img-fluid h-100 w-100" alt="camisa">
-                                    </section>
+                            </div>
+                            
+                            <div class="d-flex col-2">
+                                <div class="container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/img/short_underbeige.jpg" class="imgside" alt="remera">
+                                    <div class="overlay">
+                                        <div class="content">
+                                             <p>UNDER BEIGE</p>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+
+                            <div class="d-flex col-2">
+                                <div class="container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/img/bermuda_underblack.jpg" class="imgside" alt="remera">
+                                    <div class="overlay">
+                                        <div class="content">
+                                            <p>UNDER BLACK</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselOfertas" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Anterior</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselOfertas" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Siguiente</span>
-                                </button>
                             </div>
                         </div>
-                    </div>   
-                </div>    
-            </section> 
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-2"> 
+                            <div class="col-lg-8 d-flex justify-content-center"> 
+                                <div id="carouselDestacados" class="carousel d-lg-none slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <section class>
+                                                <img src="./assets/img/remera_blackbeach.jpg" class="d-block img-fluid h-100 w-100" alt="remera">
+                                            </section>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <section class="">
+                                                <img src="./assets/img/remera_retrowave.jpg" class="d-block img-fluid h-100 w-100" alt="remera">
+                                            </section>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <section class="">
+                                                <img src="./assets/img/remera_blanca_fuckofcupid.jpg" class="d-block img-fluid h-100 w-100" alt="remera">
+                                            </section>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <section class="">
+                                                <img src="./assets/img/remera_convergebeige.jpg" class="d-block img-fluid h-100 w-100" alt="remera">
+                                            </section>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <section class="">
+                                                <img src="./assets/img/short_underbeige.jpg" class="d-block img-fluid h-100 w-100" alt="short">
+                                            </section>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <section class="">
+                                                <img src="./assets/img/bermuda_underblack.jpg" class="d-block img-fluid h-100 w-100" alt="bermuda">
+                                            </section>
+                                        </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestacados" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Anterior</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselDestacados" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Siguiente</span>
+                                        </button>
+                                    </div>
+                                </div> 
+                            </div>   
+                        </div>    
+                    </div>       
+                </section>
+                
+                <section class="d-flex justify-content-evenly">
+                    <h2>OFERTAS</h2>
+                </section>    
+                <section class="p-4">
+                    <div class="container-fluid d-none d-lg-block">
+                        <div class="row justify-content-between">
+                            <div class="d-flex col-2">
+                                <div class="container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/img/campera_underblack.jpg" class="imgside" alt="campera">
+                                    <div class="overlay">
+                                        <div class="content">
+                                            <p>UNDER BLACK</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex col-2">
+                                <div class="container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/img/campera_underbrown.jpg" class="imgside" alt="campera">
+                                    <div class="overlay">
+                                        <div class="content">
+                                            <p>UNDER BROWN</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex col-2">
+                                <div class="container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/img/pantaloncargo_wnderblack.jpg" class="imgside" alt="pantalon">
+                                    <div class="overlay">
+                                        <div class="content">
+                                            <p>WNDER BLACK</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex col-2">
+                                <div class="container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/img/pantaloncargo_wndergreen.jpg" class="imgside" alt="pantalon">
+                                    <div class="overlay">
+                                        <div class="content">
+                                            <p>WNDER GREEN</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex col-2">
+                                <div class="container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/img/camisa_underbeige.jpg" class="imgside" alt="camisa">
+                                    <div class="overlay">
+                                        <div class="content">
+                                            <p>UNDER BEIGE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex col-2">
+                                <div class="container d-flex justify-content-center align-items-center">
+                                    <img src="./assets/img/camisa_underbrown.jpg" class="imgside" alt="camisa">
+                                    <div class="overlay">
+                                        <div class="content">
+                                            <p>UNDER ORANGE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="col-lg-8 d-flex justify-content-center"> 
+                            <div id="carouselOfertas" class="carousel d-lg-none slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <section class="imgIndex">
+                                            <img src="./assets/img/campera_underblack.jpg" class="d-block img-fluid h-100 w-100" alt="campera">
+                                        </section>
+                                        <section class="imgIndex">
+                                            <img src="./assets/img/campera_underbrown.jpg" class="d-block img-fluid h-100 w-100" alt="campera">
+                                        </section>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <section class="imgIndex">
+                                            <img src="./assets/img/pantaloncargo_wnderblack.jpg" class="d-block img-fluid h-100 w-100" alt="pantalon">
+                                        </section>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <section class="imgIndex">
+                                            <img src="./assets/img/pantaloncargo_wndergreen.jpg" class="d-block img-fluid h-100 w-100" alt="pantalon">
+                                        </section>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <section class="imgIndex">
+                                            <img src="./assets/img/camisa_underbeige.jpg" class="d-block img-fluid h-100 w-100" alt="camisa">
+                                        </section>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <section class="imgIndex">
+                                            <img src="./assets/img/camisa_underbrown.jpg" class="d-block img-fluid h-100 w-100" alt="camisa">
+                                        </section>
+                                    </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselOfertas" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Anterior</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselOfertas" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Siguiente</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>    
+                </section>
+            </section>
+            <div class="p-4 backgroundMain">
+                <h3 class="m-0 text-center text-dark">Comentarios de Clientes</h3>
+                <div class="row row-cols-1 row-cols-lg-4 g-4">
+                    <div class="col">
+                        <div class="card cardComentario h-100">
+                            <div class="card-body cardComentariosBody text-center">
+                                <img class="imgComentario rounded-circle" src="./assets/img/comentarios/martin.jpg" alt="foto de comentarios">
+                                <p class="parrafoNosotros card-text text-dark">"Las prendas de BLIND son pura calidad y estilo. Cada vez que uso algo de ellos, me siento como un rockstar. ¡Excelente marca!"</p>
+                            </div>
+                            <div class="card-footer text-dark text-dark text-center">- Martín Gómez</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardComentario h-100">
+                            <div class="card-body cardComentarioBody text-center">
+                                <img class="imgComentario rounded-circle" src="./assets/img/comentarios/walter.jpg" alt="foto de comentarios">
+                                <p class="parrafoNosotros card-text text-dark">"BLIND es mi marca favorita sin duda alguna. La elegancia y el confort que ofrecen sus prendas son incomparables. ¡Simplemente espectacular!"</p>
+                            </div>
+                            <div class="card-footer text-dark text-center">- Walter Rodríguez</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardComentario h-100">
+                            <div class="card-body cardComentarioBody text-center">
+                                <img class="imgComentario rounded-circle" src="./assets/img/comentarios/diego.jpg" alt="foto de comentarios">
+                                <p class="parrafoNosotros card-text text-dark">"Con BLIND descubrí lo que es vestir realmente bien. Sus diseños son únicos y la calidad es impecable. ¡Recomendadísimo!"</p>
+                            </div>
+                            <div class="card-footer text-center text-dark">- Diego Pérez</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card cardComentario h-100">
+                            <div class="card-body cardComentarioBody text-center">
+                                <img class="imgComentario rounded-circle" src="./assets/img/comentarios/sofia.jpg" alt="foto de comentarios">
+                                <p class="parrafoNosotros card-text text-dark">"BLIND me sorprende cada vez más. Sus prendas no solo son hermosas, sino que también duran una eternidad. ¡Una marca para toda la vida!"</p>
+                            </div>
+                            <div class="card-footer text-dark text-center">- Sofía López</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer class="text-center">

@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="¡Mantente al tanto de las últimas tendencias y novedades en moda en la sección de NOVEDADES de BLIND! Desde lanzamientos de productos hasta consejos de estilo, aquí es donde encontrarás todo lo nuevo y emocionante en el mundo de la moda. ¡No te pierdas nuestras actualizaciones periódicas y únete a la conversación sobre lo último en moda!">
+        <meta name="keywords" content="Blind, novedades, tendencias, moda, lanzamientos, consejos de estilo, actualizaciones, noticias, moda actual, moda emergente, estilo de vida">
         <title>Novedades - CoderHouse - Indumentaria</title> 
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <script src="https://kit.fontawesome.com/0e5b72817b.js" crossorigin="anonymous"></script>
@@ -13,11 +15,27 @@
     
     <body>
         <header class="d-flex flex-column">
-            <div class="d-flex justify-content-between align-items-center ps-2">
+            <div class="d-flex align-items-center justify-content-between">
                 <a href="../index.html">
                     <img class="logo" src="../assets/img/logo.png" alt="logo de la tienda de ropa">
                 </a>
-                <div>
+                <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse text-center justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="../index.html">INICIO</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/novedades.html">NOVEDADES</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/tienda.html">TIENDA</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/contacto.html">CONTACTO</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="d-flex">
                     <a href="#" class="backgroundButton btn btn-sm" data-bs-toggle="modal" data-bs-target="#carritoModal">
                         <i class="colorContent fas fa-shopping-cart"></i>
                     </a>
@@ -38,15 +56,13 @@
                             </div>
                         </div>
                     </div>
-                    <button href="#" class="backgroundButton btn btn-sm mx-2 fw-bold">
-                        <div class="colorContent">Ingresar</div>
+                    <button href="#" class="backgroundButton btn btn-sm mx-2 fw-bold justify-content-md-end">
+                        <i class="colorContent fa-solid fa-user"></i>
                     </button>
                 </div>
             </div>
-            </nav>
             <nav class="navbar navbar-expand-lg navbar-light d-lg-none">
-                <div class="container-fluid d-flex justify-content-between">
-                    <div class="menu fw-bold p-2">MENU</div>
+                <div class="container-fluid d-flex justify-content-end">
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -63,30 +79,12 @@
                     </div>
                 </div>
             </nav>
-            <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block">
-                <div class="container-fluid">
-                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse text-center justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../index.html">INICIO</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/novedades.html">NOVEDADES</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/tienda.html">TIENDA</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/contacto.html">CONTACTO</a></li>
-                    </ul>
-                </div>
-            </nav>
         </header>
 
         <main class="container-fluid p-0 text-center">
             <div class="text-center backgroundIndex">
-                <div class="align-items-center">
-                    <div class="col text-center">
-                        <h1>NOVEDADES</h1>
-                    </div>
+                <div class="col text-center align-items-center">
+                    <h1>NOVEDADES</h1>
                 </div>
             </div>
             <!-- Version Mobile. -->

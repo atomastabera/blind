@@ -1,23 +1,25 @@
 
-$color-primario:#EBEFF1;
-$color-secundary:#ACB9C1;
-$color-tituloindex:#B7E9EF;
-$color-titulos:#e9e9e9;
-$color-texto:rgb(255, 255, 255);
+$color-primario:#C4BAA4;
+$color-secundary:#B2BEA1;
+$color-tituloindex:#6d0e13da;
+$color-titulos:#cecec1; 
+$color-texto:rgb(255, 255, 255);    
 $color-texto-parrafo:#1c2022;
 $color-texto-main: #C9DFDF;
-$color-hover:#607B8A;
+$color-hover:#532528cc;
+$color-hover-button: #e49297;
+$color-hover-nav:#eeec7a;
 
-$background-primary: #a6d8da8f;
-$background-secundary:#273238;
-$background-tercerary:rgba(238, 222, 180, 0.144);
+$background-primary: #E0CDA2;
+$background-secundary:#1c242abb;
+$background-tercerary:#6b3e40;
 $background-quaternary:#75d6da21;
 
 $margin-img: 5px;
 $margin-img-lg: 15px;
-$margin-box-shadow: 0 5px 5px 5px;
+$margin-box-shadow: 0 0 5px 5px;
 
-$button-color:#1c2930;
+$button-color:#6D0E13;
 
 $fuente-cabin:"Cabin", sans-serif;
 $fuente-poppins: "Poppins", sans-serif;
@@ -30,6 +32,12 @@ $font-righteous: "Righteous", sans-serif;
 $fuente-chica:20px;
 $fuente-grande:50px;
 $fuente-xll:65px;
+
+$text-shadow:
+-1px -1px 0 #000,  
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
 
 $fuente-negrita: bold;
 

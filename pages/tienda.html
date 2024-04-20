@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Shop - CoderHouse - Indumentaria</title>
+        <meta name"description" content="En la sección de TIENDA de BLIND, encontrarás una selección de prendas de moda para todos los estilos y ocasiones, nuestra colección ofrece calidad y estilo incomparables. ¡Explora nuestra variedad de productos y encuentra tu próximo look favorito!">
+        <meta name="keywords" content="Tienda, Blind, prendas de vestir, moda, ropa, estilo, tendencias, hombres, mujeres, accesorios, calidad, compras">
+        <title>Tienda - CoderHouse - Indumentaria</title>
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <script src="https://kit.fontawesome.com/0e5b72817b.js" crossorigin="anonymous"></script>
         <script src="../js/bootstrap.bundle.min.js"></script>
@@ -13,11 +15,27 @@
     
     <body>
         <header class="d-flex flex-column">
-            <div class="d-flex justify-content-between align-items-center ps-2">
+            <div class="d-flex align-items-center justify-content-between">
                 <a href="../index.html">
                     <img class="logo" src="../assets/img/logo.png" alt="logo de la tienda de ropa">
                 </a>
-                <div>
+                <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse text-center justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="../index.html">INICIO</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/novedades.html">NOVEDADES</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/tienda.html">TIENDA</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/contacto.html">CONTACTO</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="d-flex">
                     <a href="#" class="backgroundButton btn btn-sm" data-bs-toggle="modal" data-bs-target="#carritoModal">
                         <i class="colorContent fas fa-shopping-cart"></i>
                     </a>
@@ -38,15 +56,13 @@
                             </div>
                         </div>
                     </div>
-                    <button href="#" class="backgroundButton btn btn-sm mx-2 fw-bold">
-                        <div class="colorContent">Ingresar</div>
+                    <button href="#" class="backgroundButton btn btn-sm mx-2 fw-bold justify-content-md-end">
+                        <i class="colorContent fa-solid fa-user"></i>
                     </button>
                 </div>
             </div>
-            </nav>
             <nav class="navbar navbar-expand-lg navbar-light d-lg-none">
-                <div class="container-fluid d-flex justify-content-between">
-                    <div class="menu fw-bold p-2">MENU</div>
+                <div class="container-fluid d-flex justify-content-end">
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -56,55 +72,77 @@
                         <ul class="navbar-nav">
                             <li class="nav-item navbar-brand"><a class="nav-link" href="../index.html">INICIO</a></li>
                             <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/novedades.html">NOVEDADES</a></li>
-                            <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/shop.html">TIENDA</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/tienda.html">TIENDA</a></li>
                             <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a></li>
                             <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/contacto.html">CONTACTO</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block">
-                <div class="container-fluid">
-                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse text-center justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../index.html">INICIO</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/novedades.html">NOVEDADES</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/tienda.html">TIENDA</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/contacto.html">CONTACTO</a></li>
-                    </ul>
-                </div>
-            </nav>
         </header>
 
         <main>
             <div class="container-fluid text-center backgroundIndex">
-                <div class="align-items-center">
-                    <div class="col text-center">
-                        <h1>SHOP</h1>
-                    </div>
+                <div class="col text-center align-items-center">
+                    <h1>SHOP</h1>
                 </div>
             </div>
-            
-            <div class="container-fluid d-flex justify-content-center">
-                <div class="row">
-                    <div class="col">
-                        <form class="buscador d-flex">
-                            <input class="form-control bg-light border-0 rounded-pill mr-2" type="search" placeholder="¿Que buscas?" aria-label="Search">
-                            <button class="btn backgroundButton text-dark rounded-pill fw-bold" type="submit">
-                                <div class="colorContent">Buscar</div>
+            <div class="container-fluid align-items-center justify-content-center">
+                <div class="row align-items-center p-1">
+                    <div class="col-md-12">
+                        <form class="buscador d-flex justify-content-center align-items-center">
+                            <input class="inputBuscador form-control bg-light border-0 rounded-pill me-3 text-center" type="search" placeholder="¿Qué estas buscando?" aria-label="Search">
+                            <button class="btn backgroundButton text-dark rounded-pill fw-bold me-3" type="submit">
+                                <span class="colorContent">Buscar</span>
+                            </button>
+                            <button class="btn backgroundButton text-dark rounded-pill fw-bold" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                <i class="fas fa-sliders-h colorContent"></i>
                             </button>
                         </form>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col">
+                                        <h5>Filtros de prendas</h5>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="checkCamisas">
+                                            <label class="form-check-label" for="checkCamisas">
+                                                Camisas
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="checkPantalones">
+                                            <label class="form-check-label" for="checkPantalones">
+                                                Pantalones
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="checkRemeras">
+                                            <label class="form-check-label" for="checkRemeras">
+                                                Remeras
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="checkBermudas">
+                                            <label class="form-check-label" for="checkBermudas">
+                                                Bermudas
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col">
+                                        <button class="btn backgroundButton btn-secondary me-2">Aplicar</button>
+                                        <button class="btn btn-secondary">Eliminar filtro</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <section class="row justify-content-evenly">
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+            <div class="row justify-content-evenly pb-4 w-100">
+                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 col-xs-6 mt-3 mb-3">
                     <div class="flex-column align-items-center text-center">
                         <img class="sizeImgShop" alt="camperacorderoy" src="../assets/img/campera_underbrown.jpg">
                         <div class="card-body">
@@ -113,7 +151,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 col-xs-6 mt-3 mb-3">
                     <div class="flex-column align-items-center text-center">
                         <img class="sizeImgShop" alt="camperacorderoy" src="../assets/img/campera_underblack.jpg" >
                         <div class="card-body">
@@ -123,7 +161,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 col-xs-6 mt-3 mb-3">
                     <div class="flex-column align-items-center text-center">
                         <img class="sizeImgShop" alt="camisabeige" src="../assets/img/camisa_underbeige.jpg">
                         <div class="card-body">
@@ -133,7 +171,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 col-xs-6 mt-3 mb-3">
                     <div class="flex-column align-items-center text-center">
                         <img class="sizeImgShop" alt="camisamarron" src="../assets/img/camisa_underbrown.jpg">
                         <div class="card-body">
@@ -143,7 +181,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 col-xs-6 mt-3 mb-3">
                     <div class="flex-column align-items-center text-center">
                         <img class="sizeImgShop" alt="shortbeige" src="../assets/img/short_underbeige.jpg">
                         <div class="card-body">
@@ -153,7 +191,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 col-xs-6 mt-3 mb-3">
                     <div class="flex-column align-items-center text-center">
                         <img class="sizeImgShop" alt="bermudagris" src="../assets/img/bermuda_underV.jpg">
                         <div class="card-body">
@@ -163,7 +201,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 col-xs-6 mt-3 mb-3">
                     <div class="flex-column align-items-center text-center">
                         <img class="sizeImgShop" alt="bermudaverde" src="../assets/img/bermuda_undergreen.jpg">
                         <div class="card-body">
@@ -173,7 +211,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 col-xs-6 mt-3 mb-3">
                     <div class="flex-column align-items-center text-center">
                         <img class="sizeImgShop" alt="shortmarron" src="../assets/img/short_underbrown.jpg">
                         <div class="card-body">
@@ -183,7 +221,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 col-xs-6 mt-3 mb-3">
                     <div class="flex-column align-items-center text-center">
                         <img class="sizeImgShop" alt="shortnegro" src="../assets/img/bermuda_underblack.jpg">
                         <div class="card-body">
@@ -193,9 +231,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 col-xs-6 mt-3 mb-3">
                     <div class="flex-column align-items-center text-center">
-                        <img class="sizeImgShop" alt="shortblanco" src="../assets/img/bermuda_underwhitex.jpg">
+                        <img class="sizeImgShop" alt="shortblanco" src="../assets/img/bermuda_underwhite.jpg">
                         <div class="card-body">
                             <p class="tituloPrenda">BERMUDA UNDERWHITE<br>
                                 $20.000</p>
@@ -203,7 +241,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 col-xs-6 mt-3 mb-3">
                     <div class="flex-column align-items-center text-center">
                         <img class="sizeImgShop" alt="buzonegro" src="../assets/img/buzo_black_underwave.jpg">
                         <div class="card-body">
@@ -213,7 +251,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 col-xs-6 mt-3 mb-3">
                     <div class="flex-column align-items-center text-center">
                         <img class="sizeImgShop" alt="remeramangalarganegra" src="../assets/img/mangalarga_flower.jpg">
                         <div class="card-body">
@@ -223,7 +261,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 col-xs-6 mt-3 mb-3">
                     <div class="flex-column align-items-center text-center">
                         <img class="sizeImgShop" alt="musculosaamarilla" src="../assets/img/musculosa_underyllw.jpg">
                         <div class="card-body">
@@ -233,7 +271,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 col-xs-6 mt-3 mb-3">
                     <div class="flex-column align-items-center text-center">
                         <img class="sizeImgShop" alt="musculosaroja" src="../assets/img/musculosa_roja.jpg">
                         <div class="card-body">
@@ -243,7 +281,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 col-xs-6 mt-3 mb-3">
                     <div class="flex-column align-items-center text-center">
                         <img class="sizeImgShop" alt="pantaloncargonegro" src="../assets/img/pantaloncargo_wnderblack.jpg">
                         <div class="card-body">
@@ -253,7 +291,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 col-xs-6 mt-3 mb-3">
                     <div class="flex-column align-items-center text-center">
                         <img class="sizeImgShop" alt="pantaloncargoverde" src="../assets/img/pantaloncargo_wndergreen.jpg">
                         <div class="card-body">
@@ -263,7 +301,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 col-xs-6 mt-3 mb-3">
                     <div class="flex-column align-items-center text-center">
                         <img class="sizeImgShop" alt="remerablanca" src="../assets/img/remera_whiteloop.jpg">
                         <div class="card-body">
@@ -273,7 +311,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 col-xs-6 mt-3 mb-3">
                     <div class="flex-column align-items-center text-center">
                         <img class="sizeImgShop" alt="remeramangalargablanca" src="../assets/img/mangalarga_whitex.jpg">
                         <div class="card-body">
@@ -283,7 +321,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 col-xs-6 mt-3 mb-3">
                     <div class="flex-column align-items-center text-center">
                         <img class="sizeImgShop" alt="remerablanca" src="../assets/img/remera_convergewhite.jpg">
                         <div class="card-body">
@@ -293,7 +331,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 col-xs-6 mt-3 mb-3">
                     <div class="flex-column align-items-center text-center">
                         <img class="sizeImgShop" alt="remerabobmarley" src="../assets/img/remera_underbob.jpg">
                         <div class="card-body">
@@ -303,7 +341,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
+                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 col-xs-6 mt-3 mb-3">
                     <div class="flex-column align-items-center text-center">
                         <img class="sizeImgShop" alt="remeranegra" src="../assets/img/remera_negra_bootycall.jpg">
                         <div class="card-body">
@@ -313,127 +351,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
-                    <div class="flex-column align-items-center text-center">
-                        <img class="sizeImgShop" alt="remerabeige" src="../assets/img/remera_convergebeige.jpg">
-                        <div class="card-body">
-                            <p class="tituloPrenda">REMERA CONVER BEIGE<br>
-                            $20.000</p>
-                            <button class="btn buttonCarrito">AGREGAR AL CARRITO</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
-                    <div class="flex-column align-items-center text-center">
-                        <div class="card-body">
-                        <img class="sizeImgShop" alt="remerablanca" src="../assets/img/remera_blanca_fuckofcupid.jpg">
-                        <p class="tituloPrenda">REMERA FUCK OF CUPID<br>
-                            $20.000</p>
-                        <button class="btn buttonCarrito">AGREGAR AL CARRITO</button>    
-                        </div>
-                    </div>
-                </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
-                    <div class="flex-column align-items-center text-center">
-                        <img class="sizeImgShop" alt="remerablanca" src="../assets/img/remera_blanca_greenflower.jpg">
-                        <div class="card-body">
-                            <p class="tituloPrenda">REMERA GREEN FLOWER<br>
-                                $20.000</p>
-                            <button class="btn buttonCarrito">AGREGAR AL CARRITO</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
-                    <div class="flex-column align-items-center text-center">
-                        <img class="sizeImgShop" alt="remeragris" src="../assets/img/remera_hookup.jpg">
-                        <div class="card-body">
-                            <p class="tituloPrenda">REMERA HOOKUP<br>
-                                $20.000</p>
-                            <button class="btn buttonCarrito">AGREGAR AL CARRITO</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
-                    <div class="flex-column align-items-center text-center">
-                        <img class="sizeImgShop" alt="remeranaranja" src="../assets/img/remera_imfine.jpg">
-                        <div class="card-body">
-                            <p class="tituloPrenda">REMERA I'M FINE<br>
-                                $20.000</p>
-                            <button class="btn buttonCarrito">AGREGAR AL CARRITO</button>
-                        </div>
-                    </div>
-                </div>    
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
-                    <div class="flex-column align-items-center text-center">
-                        <img class="sizeImgShop" alt="remeranegra" src="../assets/img/remera_blackbeach.jpg">
-                        <div class="card-body">
-                            <p class="tituloPrenda">REMERA BLACKBEACH<br>
-                                $20.000</p>
-                            <button class="btn buttonCarrito">AGREGAR AL CARRITO</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
-                   <div class="flex-column align-items-center text-center">
-                        <img class="sizeImgShop" alt="remeranegra" src="../assets/img/remera_underblack.jpg">
-                        <div class="card-body">
-                            <p class="tituloPrenda">REMERA UNDERBLACK<br>
-                                $20.000</p>
-                            <button class="btn buttonCarrito">AGREGAR AL CARRITO</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
-                   <div class="flex-column align-items-center text-center">
-                        <img class="sizeImgShop" alt="remeraretro" src="../assets/img/remera_retrowave.jpg">
-                        <div class="card-body">
-                            <p class="tituloPrenda">REMERA RETROWAVE<br>
-                                $20.000</p>
-                            <button class="btn buttonCarrito">AGREGAR AL CARRITO</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
-                    <div class="flex-column align-items-center text-center">
-                        <img class="sizeImgShop" alt="remerasunrise gris" src="../assets/img/remera_gris_sunrise.jpg">
-                        <div class="card-body">
-                            <p class="tituloPrenda">REMERA SUNRISE<br>
-                                $20.000</p>
-                            <button class="btn buttonCarrito">AGREGAR AL CARRITO</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
-                    <div class="flex-column align-items-center text-center">
-                        <img class="sizeImgShop" alt src="../assets/img/buzo_blanco_wave.jpg">
-                        <div class="card-body">
-                            <p class="tituloPrenda">BUZO WAVE<br>
-                                $20.000</p>
-                            <button class="btn buttonCarrito">AGREGAR AL CARRITO</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3">
-                  <div class="flex-column align-items-center text-center">
-                        <img class="sizeImgShop" alt src="../assets/img/short_undergrey.jpg">
-                        <div class="card-body">
-                            <p class="tituloPrenda">SHORT UNDERGREY<br>
-                                $20.000</p>
-                            <button class="btn buttonCarrito">AGREGAR AL CARRITO</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="tarjetaPrendas card col-lg-3 col-md-6 col-sm-12 mt-3 mb-3 shadow-lg">
-                    <div class="flex-column align-items-center text-center">
-                        <img class="sizeImgShop" alt="musculosa gris" src="../assets/img/musculosa_udnergrey.jpg">
-                        <div class="card-body">
-                            <p class="tituloPrenda">MUSCULOSA UNDERGREY<br>
-                                $20.000</p>
-                            <button class="btn buttonCarrito">AGREGAR AL CARRITO</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
         </main>
 
         <footer class="text-center">

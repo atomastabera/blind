@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nosotros- CoderHouse - Indumentaria</title>
+        <meta name="description" content="Conoce más sobre la historia y la visión detrás de BLIND en nuestra sección de NOSOTROS. Descubre nuestra pasión por la moda y nuestro compromiso con la calidad y la innovación. Desde nuestros inicios hasta nuestra misión actual, estamos aquí para ofrecerte una experiencia de compra excepcional. ¡Acompáñanos en nuestro viaje!">
+        <meta name="keywords" content="blind, historia, misión, visión, moda, calidad, innovación, compromiso, equipo, experiencia, pasión">
+        <title>Nosotros - CoderHouse - Indumentaria</title>
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <script src="https://kit.fontawesome.com/0e5b72817b.js" crossorigin="anonymous"></script>
         <script src="../js/bootstrap.bundle.min.js"></script>
@@ -13,11 +15,27 @@
 
     <body>
         <header class="d-flex flex-column">
-            <div class="d-flex justify-content-between align-items-center ps-2">
+            <div class="d-flex align-items-center justify-content-between">
                 <a href="../index.html">
                     <img class="logo" src="../assets/img/logo.png" alt="logo de la tienda de ropa">
                 </a>
-                <div>
+                <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse text-center justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="../index.html">INICIO</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/novedades.html">NOVEDADES</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/tienda.html">TIENDA</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/contacto.html">CONTACTO</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="d-flex">
                     <a href="#" class="backgroundButton btn btn-sm" data-bs-toggle="modal" data-bs-target="#carritoModal">
                         <i class="colorContent fas fa-shopping-cart"></i>
                     </a>
@@ -38,15 +56,13 @@
                             </div>
                         </div>
                     </div>
-                    <button href="#" class="backgroundButton btn btn-sm mx-2 fw-bold">
-                        <div class="colorContent">Ingresar</div>
+                    <button href="#" class="backgroundButton btn btn-sm mx-2 fw-bold justify-content-md-end">
+                        <i class="colorContent fa-solid fa-user"></i>
                     </button>
                 </div>
             </div>
-            </nav>
             <nav class="navbar navbar-expand-lg navbar-light d-lg-none">
-                <div class="container-fluid d-flex justify-content-between">
-                    <div class="fw-bold p-2">MENU</div>
+                <div class="container-fluid d-flex justify-content-end">
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -63,77 +79,92 @@
                     </div>
                 </div>
             </nav>
-            <nav class="navbar navbar-expand-lg navbar-light d-none d-lg-block">
-                <div class="container-fluid">
-                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse text-center justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../index.html">INICIO</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/novedades.html">NOVEDADES</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/tienda.html">TIENDA</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="../pages/contacto.html">CONTACTO</a></li>
-                    </ul>
-                </div>
-            </nav>
         </header>
 
         <main class="backgroundMaincontainer-fluid p-0 text-center">
             <div class="container-fluid text-center backgroundIndex">
-                <div class="align-items-center">
-                    <div class="col text-center">
-                        <h1>NOSOTROS</h1>
+                <div class="col text-center align-items-center">
+                    <h1>SOBRE NOSOTROS</h1>
+                </div>
+            </div>
+            <div class="container-fluid m-0">
+                <div class="row">
+                    <div class="backgroundMap col-md-6 text-white">
+                        <div class="container-fluid">
+                            <h2>¿Quiénes Somos?</h2>
+                            <p class="parrafoNosotrosDos">Somos una marca emergente que está lista para revolucionar tu armario con nuestras innovadoras colecciones y estilo vanguardista. En BLIND, no solo vestimos cuerpos, sino que creamos experiencias de moda que te inspirarán a expresar tu verdadera esencia.</p>
+                            <p class="parrafoNosotrosDos">Nuestro enfoque en la creatividad y la originalidad nos distingue en un mercado saturado de opciones. Cada prenda de BLIND es diseñada con meticulosidad y atención al detalle, desde la elección de los materiales hasta el corte y la confección. Nos enorgullece ofrecer prendas de calidad que no solo te harán lucir bien, sino que también te harán sentir seguro y empoderado en cualquier situación.</p>
+                        </div>
+                        <div class="col-lg-12 p-5 text-center">
+                            <img class="imgNosotros m-3 img-fluid" src="../assets/img/imagenes_nosotros/telagris.jpg" alt="Imagen">
+                        </div>
+                    </div>
+                    <div class="backgroundForm col-md-6 mx-auto d-block pt-4 mt-md-0">
+                        <div class="col-lg-12 p-5 text-center">
+                            <img class="imgNosotros m-3 img-fluid" src="../assets/img/imagenes_nosotros/ciudadbsas.jpg" alt="Imagen">
+                        </div>
+                        <div class="container-fluid">
+                            <h2>¿De Dónde Somos?</h2>
+                            <p class="parrafoNosotros">
+                            En Blind, nos enorgullece nuestra historia de resiliencia y crecimiento. Nacimos en Buenos Aires en 2019 con una idea: ofrecer soluciones innovadoras en un mundo lleno de obstáculos. A lo largo de nuestro viaje, hemos enfrentado desafíos con determinación, transformándolos en oportunidades para fortalecernos y crecer.
+                            </p>
+                            <p class="parrafoNosotros">
+                            Somos un equipo apasionado que cree en la fuerza de la creatividad y la innovación para superar cualquier adversidad. Cada paso que damos nos acerca más a nuestra visión de crear un impacto significativo en el mundo que nos rodea.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="backgroundMain rounded-3 m-4 p-4">
+                        <p class="parrafoNosotros text-dark">Únete a la revolución de la moda cómoda con Blind y descubre una nueva forma de vestir que te hará sentir bien por dentro y por fuera. Nuestro compromiso con la calidad, la comodidad y el estilo asegura que cada experiencia de compra con nosotros sea una experiencia excepcional. Así que no esperes más, hazte con tus prendas favoritas de Comfort Couture y experimenta la diferencia por ti mismo.</p>
+                    </div>
+                    <div class="col-lg-12 container-fluid mt-1 p-0">
+                        <div class="embed-responsive">
+                            <iframe class="videoNosotros mb-3" src="https://www.youtube.com/embed/5i0vYvWcaGo" title="Street Clothing Brand Promotional Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="p-4">
-                <p class="parrafoNosotros">Somos una marca emergente que está lista para revolucionar tu armario con nuestras innovadoras colecciones y estilo vanguardista. En BLIND, no solo vestimos cuerpos, sino que creamos experiencias de moda que te inspirarán a expresar tu verdadera esencia.</p>
-
-                <p>Nuestro enfoque en la creatividad y la originalidad nos distingue en un mercado saturado de opciones. Cada prenda de BLIND es diseñada con meticulosidad y atención al detalle, desde la elección de los materiales hasta el corte y la confección. Nos enorgullece ofrecer prendas de calidad que no solo te harán lucir bien, sino que también te harán sentir seguro y empoderado en cualquier situación.</p>
-            </div>
-            <div class="videoNosotros py-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FZiDf1PrQ_c?si=UF_y4ced1hHxBMwy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-                </div>
-            </div>
-            <div class="parrafoNosotros py-4">
-                <p class="parrafoNosotros">Únete a la revolución de la moda cómoda con Blind y descubre una nueva forma de vestir que te hará sentir bien por dentro y por fuera. Nuestro compromiso con la calidad, la comodidad y el estilo asegura que cada experiencia de compra con nosotros sea una experiencia excepcional. Así que no esperes más, hazte con tus prendas favoritas de Comfort Couture y experimenta la diferencia por ti mismo.</p>
-            </div>
-
-            <section class="backgroundMain">
-                <div class="container p-4">
-                    <h3 class="mb-4">Comentarios de Clientes</h3>
-                    <div class="row row-cols-1 row-cols-lg-3 g-4">
-                        <div class="col">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <p class="parrafoNosotros card-text">"¡BLIND ha cambiado por completo mi forma de ver la moda! Sus diseños únicos y la calidad de sus prendas me han convertido en un cliente fiel."</p>
-                                </div>
-                                <div class="card-footer text-muted">- Juan Pérez</div>
+            <div class="p-4 backgroundMain">
+                <h3 class="m-0 text-center text-dark">Comentarios de Clientes</h3>
+                <div class="row row-cols-1 row-cols-lg-4 g-4">
+                    <div class="col d-flex">
+                        <div class="card cardComentario h-100">
+                            <div class="card-body cardComentariosBody">
+                                <img class="imgComentario rounded-circle" src="../assets/img/comentarios/martin.jpg" alt="foto de comentarios">
+                                <p class="parrafoNosotros card-text text-dark">"Las prendas de BLIND son pura calidad y estilo. Cada vez que uso algo de ellos, me siento como un rockstar. ¡Excelente marca!"</p>
                             </div>
+                            <div class="card-footer text-dark text-dark text-center">- Martín Gómez</div>
                         </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <p class="card-text">"No puedo dejar de elogiar la comodidad y estilo de las prendas de BLIND. ¡Definitivamente recomendaría esta marca a todos mis amigos!"</p>
-                                </div>
-                                <div class="card-footer text-muted">- María González</div>
+                    </div>
+                    <div class="col d-flex">
+                        <div class="card cardComentario h-100">
+                            <div class="card-body cardComentarioBody">
+                                <img class="imgComentario rounded-circle" src="../assets/img/comentarios/walter.jpg" alt="foto de comentarios">
+                                <p class="parrafoNosotros card-text text-dark">"BLIND es mi marca favorita sin duda alguna. La elegancia y el confort que ofrecen sus prendas son incomparables. ¡Simplemente espectacular!"</p>
                             </div>
+                            <div class="card-footer text-dark text-center">- Walter Rodríguez</div>
                         </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <p class="card-text">"Gracias a Comfort Couture de BLIND, finalmente puedo sentirme elegante y cómodo al mismo tiempo. ¡Increíble!"</p>
-                                </div>
-                                <div class="card-footer text-muted">- Carlos Rodríguez</div>
+                    </div>
+                    <div class="col d-flex">
+                        <div class="card cardComentario h-100">
+                            <div class="card-body cardComentarioBody">
+                                <img class="imgComentario rounded-circle" src="../assets/img/comentarios/diego.jpg" alt="foto de comentarios">
+                                <p class="parrafoNosotros card-text text-dark">"Con BLIND descubrí lo que es vestir realmente bien. Sus diseños son únicos y la calidad es impecable. ¡Recomendadísimo!"</p>
                             </div>
+                            <div class="card-footer text-center text-dark">- Diego Pérez</div>
+                        </div>
+                    </div>
+                    <div class="col d-flex">
+                        <div class="card cardComentario h-100">
+                            <div class="card-body cardComentarioBody">
+                                <img class="imgComentario rounded-circle" src="../assets/img/comentarios/sofia.jpg" alt="foto de comentarios">
+                                <p class="parrafoNosotros card-text text-dark">"BLIND me sorprende cada vez más. Sus prendas no solo son hermosas, sino que también duran una eternidad. ¡Una marca para toda la vida!"</p>
+                            </div>
+                            <div class="card-footer text-dark text-center">- Sofía López</div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </main>
 
         <footer class="text-center">

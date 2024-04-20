@@ -1,4 +1,5 @@
 header{
+    background-color: $color-primario;
     .logo{
         width: 120px; 
     }
@@ -7,19 +8,26 @@ header{
     }
     .navbar{
         width: 100%;
-        background-color: $background-secundary;
+        background-color: $color-primario;
         color:$color-primario;
         .navbar-nav{
-        .nav-item{
-            .nav-link{
-                font-family: $fuente-poppins;
-                font-weight: bold;
-                color:$color-primario;
-                font-size: $fuente-chica;
-                }
-            }   
+            .nav-item {
+                .nav-link {
+                    font-family: $fuente-poppins;
+                    font-weight: bold;
+                    color: $color-tituloindex;
+                    font-size: $fuente-chica;
+                    &:hover{
+                        color: $color-hover-nav;
+                        transition: color 0.4s;
+                        transform: scale(1.05,1.05);
+                        
+                    }
+                }   
+            }
         }
     }
+    
     .menu{
         font-family: $fuente-poppins;
         font-size: $fuente-chica;
