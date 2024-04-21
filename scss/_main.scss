@@ -24,7 +24,6 @@ main{
     .backgroundForm{
         @include cambio-background($background-quaternary)
     }
-    
     .imgBanner{
         background-image: linear-gradient(to top, rgba(88, 88, 88, 0.151), rgba(44, 44, 44, 0.795)), url(../assets/img/banner/banner1.jpg);
         background-position: center;
@@ -231,7 +230,7 @@ main{
     }
     /*termian vesion mobile*/
 
-    }
+    
     .carousel-item{
         width: 250px;
         height: 350px;
@@ -291,4 +290,6 @@ main{
         font-family:$fuente-doppio;
         font-size: 1rem;
         color:$color-texto;
+}
+
 }
